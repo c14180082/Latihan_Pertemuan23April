@@ -1,4 +1,23 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h1>List Jurusan di Petra</h1>
+
+<br>
+<h4>Halaman Input</h4>
+
+
+<button (click)="Show_List()">Show List</button>
+
+<br>
+<br>
+
+Nama Jurusan:<br>
+<input [(ngModel)]="nama_jurusan" type="text">
+<br>
+<br>
+Penjelasan Jurusan:<br>
+<textarea [(ngModel)]="penjelasan_jurusan"></textarea>
+
+<br>
+<button (click)="Submit()">Submit</button>
+
+<router-outlet>
+</router-outlet>
